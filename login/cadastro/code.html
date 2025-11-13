@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRICAGO Avaliação de Banheiros - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script src="cadastro.js"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf6317",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211811",
+                        "foreground-light": "#141414",
+                        "foreground-dark": "#f8f7f6",
+                        "subtle-light": "#a1a1aa",
+                        "subtle-dark": "#71717a"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .form-input::placeholder {
+            color: #a1a1aa;
+        }
+        .dark .form-input::placeholder {
+            color: #71717a;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="flex flex-col min-h-screen">
+<header class="border-b border-primary/20 dark:border-primary/30">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5a4 4 0 0 1 8 0H8zm4-9c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM4 12c0-4.41 3.59-8 8-8 1.18 0 2.3.26 3.32.74A8.99 8.99 0 0 0 12 4C7.59 4 4 7.59 4 12z"></path>
+</svg>
+<h1 class="text-xl font-bold">TRICAGO</h1>
+</div>
+<div class="hidden md:flex items-center space-x-6">
+<a class="hover:text-primary transition-colors" href="../../página_inicial/code.html">Início</a>
+<a class="hover:text-primary transition-colors" href="../../avaliações/code.html">Avaliações</a>
+<a class="hover:text-primary transition-colors" href="#"></a>
+<a class="hover:text-primary transition-colors" href="../../contato_/_sobre_nós/code.html">Sobre</a>
+<a class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-primary/80 transition-colors" href="code.html">Login / Cadastro</a>
+</div>
+<button class="md:hidden text-foreground-light dark:text-foreground-dark">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</nav>
+</header>
+<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md space-y-8 p-10 bg-background-light dark:bg-background-dark/50 border border-primary/20 dark:border-primary/30 rounded-xl shadow-lg">
+<div>
+<h2 class="mt-6 text-center text-3xl font-bold tracking-tight">
+                        Acesse sua conta
+                    </h2>
+<p class="mt-2 text-center text-sm text-subtle-light dark:text-subtle-dark">
+                        Ou crie uma nova</a> para começar a avaliar
+                    </p>
+</div>
+<form action="#" class="mt-8 space-y-6" method="POST">
+<div class="rounded-lg -space-y-px">
+<div>
+<label class="sr-only" for="email-address">E-mail ou Nome de Usuário</label>
+<input class="form-input appearance-none rounded-t-lg relative block w-full px-3 py-4 bg-background-light/50 dark:bg-background-dark/50 border border-primary/30 dark:border-primary/40 focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm" id="email" type="email" placeholder="E-mail" required="" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="password">Senha</label>
+<input autocomplete="current-password" class="form-input appearance-none rounded-b-lg relative block w-full px-3 py-4 bg-background-light/50 dark:bg-background-dark/50 border border-primary/30 dark:border-primary/40 focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm" id="senha" type="password" placeholder="Senha" required="" type="password"/>
+</div>
+</div>
+<div>
+<button class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-bold rounded-lg text-white bg-primary hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors" type="submit">
+                            Login / Cadastro
+</form>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark/50 border-t border-primary/20 dark:border-primary/30 mt-auto">
+<div class="container mx-auto py-4 px-6 text-center text-subtle-light dark:text-subtle-dark text-sm">
+<p>© 2024 TRICAGO Avaliação de Banheiros. Todos os direitos reservados.</p>
+</div>
+</footer>
+</div>
+
+</body></html>

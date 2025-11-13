@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRICAGO - Avaliações de Banheiros</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf6317",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211811",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+
+        function abrirlogin(){
+            window.location.href = "../login/cadastro/code.html"
+        }
+    </script>
+<style>
+        .icon-poop {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-200">
+    <div class="relative flex min-h-screen w-full flex-col">
+    <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-primary/20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+        <div class="flex items-center gap-6">
+        <a class="flex items-center gap-2 text-xl font-bold text-zinc-900 dark:text-white" href="#">
+            <svg class="icon-poop text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c2.756 0 5.253 1.121 7.065 2.935C20.879 6.747 22 9.244 22 12c0 2.756-1.121 5.253-2.935 7.065C17.253 20.879 14.756 22 12 22s-5.253-1.121-7.065-2.935C3.121 17.253 2 14.756 2 12c0-2.756 1.121-5.253 2.935-7.065C6.747 3.121 9.244 2 12 2zm0 2c-2.206 0-4.21.896-5.657 2.343C4.896 7.79 4 9.794 4 12s.896 4.21 2.343 5.657C7.79 19.104 9.794 20 12 20s4.21-.896 5.657-2.343C19.104 16.21 20 14.206 20 12s-.896-4.21-2.343-5.657C16.21 4.896 14.206 4 12 4zm4 5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM8 9a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm4 5c-2.665 0-4.945-1.78-5.74-4.222a.5.5 0 0 1 .95-.316C7.818 11.53 9.743 13 12 13s4.182-1.47 4.79-3.538a.5.5 0 1 1 .95.316C16.945 12.22 14.665 14 12 14z"></path></svg>
+            <span>TRICAGO</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="../página_inicial/code.html">Início</a>
+            <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors" href="../contato_/_sobre_nós/code.html">Sobre</a>
+            <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors" href="../adicionar_avaliação/code adicionar_avaliação.html">Adicionar Avaliação</a>
+        </nav>
+        </div>
+        <div class="flex items-center gap-2">
+        <button onclick="abrirlogin()"class="flex items-center justify-center rounded-full p-2 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" >
+        <span class="material-symbols-outlined text-zinc-600 dark:text-zinc-300" >account_circle</span>
+        </button>
+        <button class="md:hidden flex items-center justify-center rounded-full p-2 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+        <span class="material-symbols-outlined text-zinc-600 dark:text-zinc-300">menu</span>
+        </button>
+        </div>
+        </div>
+        </div>
+    </header>
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-white">Encontre o Melhor Trono no Campus</h1>
+<p class="mt-4 text-lg text-zinc-600 dark:text-zinc-400">Avaliações honestas de todos os banheiros da universidade.</p>
+</div>
+<div class="relative mb-12">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500">search</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-full bg-background-light dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder-zinc-400 dark:placeholder-zinc-500" placeholder="Procure por banheiros por prédio, andar ou código..." type="search"/>
+</div>
+<h2 class="text-2xl font-bold text-zinc-900 dark:text-white mb-6">Banheiros Mais Bem Avaliados</h2>
+<div class="grid gap-6">
+<div class="bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row items-start gap-4 p-4 border border-zinc-200 dark:border-zinc-700">
+<img alt="Banheiro da Biblioteca Principal" class="w-full sm:w-40 h-32 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZpJgPZzwl78RGnQ5Rd5vE1IKU_5vY0FBbm6WwrmPEQOeZ87p1xae6-oOFGpK2MCuvNxKy6i7D3PXn4yI1jnUU0-kyHIY1uMmXzQ59k4KKEHR5IMMdcBWbXdf2E6fFDK3CXOvDkmfsW1NCs4n1GaYUm-J1HUZ5Es7CtYe027Vtf3pNxdX2HCbdAGntik7aaW_5HZ9HtytG6YZEayjEqHdmLmfFhIniqNIlrqWKYwewRC7WAEUGXaaIHexigE8wmyUw1lnXj02xRZsn"/>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-zinc-900 dark:text-white">Bloco K, 2º Andar</h3>
+    <div class="flex items-center gap-2 mt-1">
+    <div class="flex items-center text-primary">
+    <span class="material-symbols-outlined text-lg">star</span>
+    <span class="material-symbols-outlined text-lg">star</span>
+    <span class="material-symbols-outlined text-lg">star</span>
+    <span class="material-symbols-outlined text-lg">star</span>
+    <span class="material-symbols-outlined text-lg">star_half</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400">4.8 (120 avaliações)</p>
+    </div>
+    <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300 line-clamp-2">"Condições impecáveis, quase senti que estava em um hotel 5 estrelas. Ótima iluminação e sempre abastecido."</p>
+    <a class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="../avaliações/code.html">Ler avaliações <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+    </div>
+    </div>
+    <div class="bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row items-start gap-4 p-4 border border-zinc-200 dark:border-zinc-700">
+    <img alt="Banheiro do Centro Acadêmico" class="w-full sm:w-40 h-32 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI8CHKXXzBcvGUZMsms5z5LDu8_OUCotnsnNLJoiipK5KQoLDnC5X90OfhHNZKsOy7wmwouT0s3NxU1-SfQtq5H_xWVD6owV-YVSth0JGAfo8EQmwxg_u7iaKj2_5UCrkyPYclBLHn4jTxSwYvBCkBE6iceJ7ZFNjrrO-j8PuAxT8pILaN4ATf8-0cdaNJEhgF0MMpvtwav0dPx8m__fhpwIi4nImgMp8dmitQUL8HIkCZ3mzE1Tr0R2rp6hqqLPYzBRO4ZxcsEhQX"/>
+    <div class="flex-1">
+<h3 class="text-lg font-bold text-zinc-900 dark:text-white">Bloco 71, 3º Piso</h3>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star_half</span>
+</div>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">4.5 (95 avaliações)</p>
+</div>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300 line-clamp-2">"Surpreendentemente limpo para um banheiro de subsolo. É uma joia escondida, geralmente não muito lotado."</p>
+<a class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="../detalhes_do_banheiro/code.html">Ler avaliações <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row items-start gap-4 p-4 border border-zinc-200 dark:border-zinc-700">
+<img alt="Banheiro do Prédio de Ciências" class="w-full sm:w-40 h-32 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBEF_jp2DYOYNE2V6AlpgSvvwID-Gi8DDkbKqV69xEyjqnyj60hH3vn3gCvCEdnzyoVhKo2fTzDvTHXRS1KJ6G80NrRz7Ici5vKX4yW9tbLMo2wtuL2N7W0Q1PPC3BjrEO3lk7dnjtuwrIFbREsPOULYhieGiImC3MZm7uktUY2IS-Ev1lOmPIhegJ5tU-c5lyU4RMK_5aMUZF4pw52Y82-YH4ry0Bhqw5RwIKIOa7-ZLfciqjFkYfTHaKV3kvGayTugKOFtKT82Eq"/>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-zinc-900 dark:text-white">Centro de Convivência</h3>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg text-zinc-300 dark:text-zinc-600">star</span>
+</div>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">4.2 (80 avaliações)</p>
+</div>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300 line-clamp-2">"É... um banheiro de prédio de ciências. Funcional, cumpre o que promete. Pode ficar cheio entre as aulas."</p>
+<a class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="../avaliações/code.html">Ler avaliações <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 mt-auto">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-2 text-zinc-500 dark:text-zinc-400">
+<svg class="icon-poop h-6 w-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c2.756 0 5.253 1.121 7.065 2.935C20.879 6.747 22 9.244 22 12c0 2.756-1.121 5.253-2.935 7.065C17.253 20.879 14.756 22 12 22s-5.253-1.121-7.065-2.935C3.121 17.253 2 14.756 2 12c0-2.756 1.121-5.253 2.935-7.065C6.747 3.121 9.244 2 12 2zm0 2c-2.206 0-4.21.896-5.657 2.343C4.896 7.79 4 9.794 4 12s.896 4.21 2.343 5.657C7.79 19.104 9.794 20 12 20s4.21-.896 5.657-2.343C19.104 16.21 20 14.206 20 12s-.896-4.21-2.343-5.657C16.21 4.896 14.206 4 12 4zm4 5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM8 9a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm4 5c-2.665 0-4.945-1.78-5.74-4.222a.5.5 0 0 1 .95-.316C7.818 11.53 9.743 13 12 13s4.182-1.47 4.79-3.538a.5.5 0 1 1 .95.316C16.945 12.22 14.665 14 12 14z"></path></svg>
+<p class="text-sm">© 2025 TRICAGO Avaliações de Banheiros. Todos os direitos reservados.</p>
+</div>
+<div class="flex items-center gap-4 text-sm font-medium">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors" href="#">Política de Privacidade</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors" href="#">Termos de Serviço</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

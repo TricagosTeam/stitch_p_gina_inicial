@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRICAGO Avaliações de Banheiros</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf6317",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211811",
+                        "text-light": "#211811",
+                        "text-dark": "#f8f7f6",
+                        "border-light": "#e5e0dc",
+                        "border-dark": "#443930",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2c2117",
+                        "placeholder-light": "#887263",
+                        "placeholder-dark": "#a19084"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+        .star-rating label {
+            cursor: pointer;
+            font-size: 2.5rem;
+            color: #e5e0dc;}
+        html.dark .star-rating label {
+            color: #443930;}
+        .star-rating input[type="radio"]:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #cf6317;}
+        .star-rating input[type="radio"]:checked ~ label {
+            color: #cf6317;}
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="min-h-screen flex flex-col">
+<header class="border-b border-border-light dark:border-border-dark">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8l4-4 4 4h-3v4h-2z"></path>
+</svg>
+<h1 class="text-xl font-bold">TRICAGO</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="hover:text-primary transition-colors" href="../página_inicial/code.html">Início</a>
+<a class="hover:text-primary transition-colors" href="../avaliações/code.html">Avaliações</a>
+<a class="font-bold text-primary" href="../adicionar_avaliação/code adicionar_avaliação.html">Adicionar Avaliação</a>
+
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://img.freepik.com/vetores-premium/icone-de-perfil-de-avatar-padrao-imagem-de-usuario-de-midia-social-icone-de-avatar-cinza-silhueta-de-perfil-em-branco-ilustracao-vetorial_561158-3383.jpg?semt=ais_incoming&w=740&q=80");'></div>
+</div>
+</nav>
+</header>
+<main class="flex-grow container mx-auto px-6 py-12 flex justify-center items-center">
+<div class="w-full max-w-lg bg-surface-light dark:bg-surface-dark p-8 rounded-xl shadow-lg border border-border-light dark:border-border-dark">
+<h2 class="text-3xl font-bold text-center mb-8">Adicionar uma Nova Avaliação</h2>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium mb-2" for="restroom">Banheiro</label>
+<select class="form-select w-full bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary placeholder-placeholder-light dark:placeholder-placeholder-dark" id="restroom" name="restroom">
+<option>Selecione a localização de um banheiro</option>
+<option>Bloco K, 2º Andar</option>
+<option>Bloco 71, 3º Piso</option>
+<option>Centro de Convivência</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium mb-2">Avaliação</label>
+<div class="star-rating flex flex-row-reverse justify-center items-center gap-2">
+<input id="star5" name="rating" type="radio" value="5"/><label for="star5" title="5 estrelas">★</label>
+<input id="star4" name="rating" type="radio" value="4"/><label for="star4" title="4 estrelas">★</label>
+<input id="star3" name="rating" type="radio" value="3"/><label for="star3" title="3 estrelas">★</label>
+<input id="star2" name="rating" type="radio" value="2"/><label for="star2" title="2 estrelas">★</label>
+<input id="star1" name="rating" type="radio" value="1"/><label for="star1" title="1 estrela">★</label>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium mb-2" for="comment">Comentário</label>
+<textarea class="form-textarea w-full bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary placeholder-placeholder-light dark:placeholder-placeholder-dark" id="comment" name="comment" placeholder="Compartilhe suas opiniões sobre a limpeza, as comodidades e a experiência geral..." rows="4"></textarea>
+</div>
+<div>
+<button class="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-opacity-90 transition-colors" type="submit">
+                            Enviar Avaliação
+                        </button>
+</div>
+</form>
+</div>
+</main>
+<footer class="text-center py-4 border-t border-border-light dark:border-border-dark text-sm text-placeholder-light dark:text-placeholder-dark">
+<p>© 2024 TRICAGO Avaliações de Banheiros. Todos os direitos reservados.</p>
+</footer>
+</div>
+</body></html>

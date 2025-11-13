@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRICAGO</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#cf6317",
+            "background-light": "#f8f7f6",
+            "background-dark": "#211811",
+            "foreground-light": "#181411",
+            "foreground-dark": "#f8f7f6",
+            "subtle-light": "#887263",
+            "subtle-dark": "#a19389",
+            "border-light": "#e5e0dc",
+            "border-dark": "#3a3028",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between border-b border-border-light dark:border-border-dark py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">wc</span>
+</div>
+<h1 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">TRICAGO Avaliações</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="../../página_inicial/code.html">Início</a>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Avaliações</a>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Mapa</a>
+<a class="text-primary font-bold" href="code.html">Sobre Nós</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-primary/10 dark:bg-primary/20 text-primary hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-primary/10 dark:bg-primary/20 text-primary hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+<div class="flex flex-col gap-8">
+<div class="text-center lg:text-left">
+<h2 class="text-4xl sm:text-5xl font-bold tracking-tighter text-foreground-light dark:text-foreground-dark">Sobre Nós</h2>
+<p class="mt-4 text-lg text-subtle-light dark:text-subtle-dark max-w-xl mx-auto lg:mx-0">Seu guia para os melhores e piores tronos do campus. Estamos dedicados a melhorar a experiência na Universidade TRICAGO, um banheiro de cada vez.</p>
+</div>
+<div class="space-y-4 text-foreground-light dark:text-foreground-dark">
+<p>TRICAGO Avaliações de Banheiros é uma iniciativa liderada por estudantes que fornece informações abrangentes sobre as instalações de banheiros em todo o campus. Nossa missão é ajudar estudantes, professores e visitantes a encontrar instalações limpas, acessíveis e bem conservadas.</p>
+<p>Acreditamos que todos merecem acesso a banheiros de qualidade. Através de avaliações e classificações enviadas pelos usuários, destacamos os banheiros de primeira linha e expomos as cabines da tristeza, criando um feedback valioso para a universidade e uma experiência melhor para todos.</p>
+<p>A Universidade TRICAGO é uma instituição de renome, e temos orgulho de contribuir para o seu bem-estar. Ao garantir transparência e responsabilidade pelas instalações do campus, ajudamos a manter o padrão de excelência da universidade.</p>
+</div>
+<div class="border-t border-border-light dark:border-border-dark pt-8">
+<h3 class="text-2xl font-bold mb-4 text-foreground-light dark:text-foreground-dark">Informações de Contato</h3>
+<div class="flex items-center gap-4 text-subtle-light dark:text-subtle-dark">
+<span class="material-symbols-outlined text-primary">email</span>
+<a class="hover:text-primary transition-colors" href="mailto:Tricago.ucs@gmail.com">Tricago.ucs@gmail.com</a>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 p-8 rounded-xl border border-border-light dark:border-border-dark shadow-lg">
+<h3 class="text-3xl font-bold mb-6 text-foreground-light dark:text-foreground-dark">Envie-nos uma Mensagem</h3>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="name">Seu Nome</label>
+<input class="form-input w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary transition-colors placeholder:text-subtle-light/70 dark:placeholder:text-subtle-dark/70" id="name" name="name" placeholder="João da Silva" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="email">Seu Email</label>
+<input class="form-input w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary transition-colors placeholder:text-subtle-light/70 dark:placeholder:text-subtle-dark/70" id="email" name="email" placeholder="joao.silva@tricago.edu" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="subject">Assunto</label>
+<input class="form-input w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary transition-colors placeholder:text-subtle-light/70 dark:placeholder:text-subtle-dark/70" id="subject" name="subject" placeholder="Feedback sobre o banheiro da biblioteca" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="message">Mensagem</label>
+<textarea class="form-textarea w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary transition-colors placeholder:text-subtle-light/70 dark:placeholder:text-subtle-dark/70" id="message" name="message" placeholder="Compartilhe suas ideias, dúvidas ou preocupações..." rows="5"></textarea>
+</div>
+<div>
+<button class="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-wide hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="submit">
+                  Enviar Mensagem
+                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+<p class="text-center text-sm text-subtle-light dark:text-subtle-dark">© 2024 TRICAGO Avaliações de Banheiros. Todos os Direitos Reservados.</p>
+</div>
+</footer>
+</div>
+</body></html>

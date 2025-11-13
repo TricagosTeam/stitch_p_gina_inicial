@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRICAGO - Perfil do Usuário</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf6317",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211811",
+                        "content-light": "#211811",
+                        "content-dark": "#f8f7f6",
+                        "subtle-light": "#5c4d42",
+                        "subtle-dark": "#a49488",
+                        "border-light": "#e0d9d4",
+                        "border-dark": "#3a3028",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+    <body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark">
+    <div class="flex flex-col min-h-screen">
+    <header class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10 border-b border-border-light dark:border-border-dark">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+    <div class="flex items-center gap-4">
+    <span class="material-symbols-outlined text-primary text-3xl">
+                                shower
+                            </span>
+    <h1 class="text-xl font-bold">TRICAGO</h1>
+    </div>
+    <nav class="hidden md:flex items-center gap-8">
+    <a class="text-sm font-medium hover:text-primary transition-colors" href="../página_inicial/code.html">Início</a>
+    <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors" href="../contato_/_sobre_nós/code.html">Sobre</a>
+    </nav>
+    <div class="flex items-center gap-4">
+    <button class="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+    </button>
+    <img alt="Avatar do usuário" class="w-10 h-10 rounded-full" src="https://img.freepik.com/vetores-premium/icone-de-perfil-de-avatar-padrao-imagem-de-usuario-de-midia-social-icone-de-avatar-cinza-silhueta-de-perfil-em-branco-ilustracao-vetorial_561158-3383.jpg?semt=ais_incoming&w=740&q=80"/>
+    </div>
+    </div>
+    </div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="max-w-4xl mx-auto">
+    <div class="bg-background-light dark:bg-background-dark rounded-lg p-6 @container">
+    <div class="flex flex-col sm:flex-row items-start gap-6">
+    <img alt="Avatar de Sophia Bennett" class="w-32 h-32 rounded-full object-cover" src="https://img.freepik.com/vetores-premium/icone-de-perfil-de-avatar-padrao-imagem-de-usuario-de-midia-social-icone-de-avatar-cinza-silhueta-de-perfil-em-branco-ilustracao-vetorial_561158-3383.jpg?semt=ais_incoming&w=740&q=80"/>
+    <div class="flex-grow">
+    <h2 class="text-3xl font-bold">Sophia Bennett</h2>
+    <p class="text-subtle-light dark:text-subtle-dark mt-1">sophia.bennett@email.com</p>
+    </div>
+    </div>
+    </div>
+    <div class="mt-8">
+    <div class="border-b border-border-light dark:border-border-dark">
+        <nav aria-label="Tabs" class="flex -mb-px gap-6 px-4">
+            <a class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-primary text-primary" href="#">
+                                            Avaliações
+                                        </a>
+            <a class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-transparent text-subtle-light dark:text-subtle-dark hover:text-primary hover:border-primary/50 dark:hover:border-primary/50 transition-colors" href="#">
+                                            Salvos
+                                        </a>
+            <a class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-transparent text-subtle-light dark:text-subtle-dark hover:text-primary hover:border-primary/50 dark:hover:border-primary/50 transition-colors" href="#">
+                                            Configurações
+                                        </a>
+        </nav>
+    </div>
+    <div class="py-6">
+    <h3 class="text-2xl font-bold px-4 mb-4">Suas Avaliações</h3>
+    <div class="space-y-8">
+    <div class="bg-background-light dark:bg-background-dark p-6 rounded-lg">
+    <div class="flex items-start gap-4">
+    <img alt="Avatar de Liam Carter" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzD6FeHxa-FLS41lgWDEsyrOo3Uq8x-7pTafFui2x_EE66K7bV1vIMmWzEpmWaSfJGJ8O7TBXnkTnA4oRwUYffKjzGfClyousx7sem0fBFrL9VzWmPi36X1HUiMs32DwL4oq1TRqqGXTlV37AbCd7p_c2dYiy5eZeIDJQ7ckckidJFZnPBqKnXJB8PzZlAqY922tituUD5zHG_w3vMz-5t17acnqGQEjBO4xrFf6MIASr1FnSb8REieuvSc2HZIm4tEsxr6wQjQ_RG"/>
+    <div class="flex-1">
+    <div class="flex items-baseline justify-between">
+    <div>
+    <p class="font-semibold">Liam Carter</p>
+    <p class="text-sm text-subtle-light dark:text-subtle-dark">2 meses atrás</p>
+    </div>
+    <div class="flex items-center gap-0.5 text-primary">
+    <span class="material-symbols-outlined text-base !-mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+    <span class="material-symbols-outlined text-base !-mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+    <span class="material-symbols-outlined text-base !-mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+    <span class="material-symbols-outlined text-base !-mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+    </div>
+    </div>
+    <p class="mt-3 text-content-light dark:text-content-dark">Este banheiro era excepcionalmente limpo e bem conservado. As instalações eram modernas e havia espaço de sobra. Recomendo!</p>
+    <div class="mt-4 flex items-center gap-6 text-subtle-light dark:text-subtle-dark">
+    <button class="flex items-center gap-2 hover:text-primary transition-colors group">
+    <span class="material-symbols-outlined text-xl">thumb_up</span>
+    <span class="text-sm font-medium">12</span>
+    </button>
+    <button class="flex items-center gap-2 hover:text-primary transition-colors group">
+        <span class="material-symbols-outlined text-xl">thumb_down</span>
+        <span class="text-sm font-medium">2</span>
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="bg-background-light dark:bg-background-dark p-6 rounded-lg">
+    <div class="flex items-start gap-4">
+    <img alt="Avatar de Olivia Harper" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMxJ93MpD1yfM5X0cE6gE89ndmW6TDLW6AeZJ11WYqsZ35DQ2svcJcO3d2qqiipLPW4E1-C4KgQOjU5Z7NtTtynTYx1av3zasnfHPfzw-9Z9ZrRmreBwMm1bCjHzxhfOqUeIr4Dq-0JLiuWdTKquSd92guA-Qu5YxXIjUEElzHU4UPVeoZlTAmMu52Fa-XhUI-KSgoiAtX1OrPnrzIQN9rTEZxRcbBjViVmaOvsHlr2oeFXqGJuty3KPol8pUcmmBhVWk7zvWv06AP"/>
+    <div class="flex-1">
+    <div class="flex items-baseline justify-between">
+    <div>
+    <p class="font-semibold">Olivia Harper</p>
+    <p class="text-sm text-subtle-light dark:text-subtle-dark">3 meses atrás</p>
+    </div>
+    <div class="flex items-center gap-0.5 text-primary">
+    <span class="material-symbols-outlined text-base !-mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+    <span class="material-symbols-outlined text-base !-mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+    <span class="material-symbols-outlined text-base !-mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+    <span class="material-symbols-outlined text-base !-mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+    <span class="material-symbols-outlined text-base text-border-light dark:text-border-dark">star</span>
+    </div>
+    </div>
+    <p class="mt-3 text-content-light dark:text-content-dark">O banheiro estava limpo e funcional, mas poderia precisar de algumas atualizações. No geral, uma experiência decente.</p>
+    <div class="mt-4 flex items-center gap-6 text-subtle-light dark:text-subtle-dark">
+    <button class="flex items-center gap-2 hover:text-primary transition-colors group">
+    <span class="material-symbols-outlined text-xl">thumb_up</span>
+    <span class="text-sm font-medium">8</span>
+    </button>
+    <button class="flex items-center gap-2 hover:text-primary transition-colors group">
+    <span class="material-symbols-outlined text-xl">thumb_down</span>
+    <span class="text-sm font-medium">1</span>
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</main>
+</div>
+</body></html>
